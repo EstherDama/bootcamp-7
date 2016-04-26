@@ -9,9 +9,10 @@ def sum_digits (A):
 	total = 0
 
 	for i in A:
-		total += (i % 10)
-		total += (i / 10)
+		b = str(i)
+		for n in b:
+			total += int(n)
 	return total
 
 #test code
-print sum_digits([10,30,45])
+print sum_digits([101,300,450])
