@@ -1,3 +1,10 @@
+people = [
+('Jane', 23),
+('Brian', 67),
+('Janet', 90),
+]
+	
+
 def super_sum(*args): 
 	return sum(args)
 
