@@ -1,8 +1,6 @@
 def assignment (*args):
-	for i in args :
-		total += i
-	return total
-	return "{}: {}, ".format(label, value)
+	for i in args: 
+		return "{}: {}, ".format(label, value)
 
 #assignment again
 f = [(10, 20, 30), (10, 40) , (4, 5, 20)] 
