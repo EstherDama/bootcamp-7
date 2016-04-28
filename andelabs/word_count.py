@@ -1,19 +1,34 @@
-# a function that takes in a n input and gives a list of words
-def word (b):
-	'''
-	This is a function that takes in a sentence.
-	It gives an ouput of the words and frequency of appearence.
-	'''
-	a = b.split()
 
-	wordfreq = []
+# def words(word):
+# 	for c in word:
+# 		if c.isspace():
+# 			string_list = word.split()
 
-	for w in a:
-		wordfreq.append(a.count(w))
+# 	string_dict = {}
 
-	print "String\n" + a +"\n"
-	print "List\n" + str(a) + "\n"
-	print "Frequencies\n" + str(wordfreq) + "\n"
-	print "Pairs\n" + str(zip(a, wordfreq))
+# 	for word in string_list:
+# 		if word in string_dict:
+# 			string_dict[word] = string_dict[word] + 1
+# 		else:
+# 			string_dict[word] = 1
+# 	return string_dict
 
-word("There is alot to do, to do")
+string = "olly olly in come come free"
+print words(string)
+print words('go Go GO')
+# words('¡Hola! ¿Qué tal? Привет!')
+# dict = word_count(string)
+# print(dict)
+
+#the one that works with one error
+def words(word):
+	string_list = word.split()
+	string_dict = {}
+
+	for word in string_list:
+		if word in string_dict:
+			string_dict[word] = string_dict[word] + 1
+			continue
+		else:
+			string_dict[word] = 1
+	return string_dict

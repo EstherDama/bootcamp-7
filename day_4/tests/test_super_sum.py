@@ -2,7 +2,7 @@
 from unittest import TestCase
 from super_sum import super_sum
 
-class SuperSumTestCase(TestCase):
+class SuperSumTestCase(TestCase): #all methods that have the word test then it shoulld run!!!
 	''' Test Case for super sum '''
 
 	def  test_empty_input(self):

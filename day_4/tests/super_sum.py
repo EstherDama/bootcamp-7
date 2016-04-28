@@ -12,11 +12,7 @@ def super_sum(*args):
 	
 	total = 0
 
-	if not args:
-		return 0
-
-	else:
-
+	if args:
 		for x in args:
 			if type(x) == list:
 				total += sum(x)
@@ -25,7 +21,7 @@ def super_sum(*args):
 			else:
 				total += x
 		return total
-
+	return 0
 #another way of doing it
 		# for x in args:
 		# 	if type(x) == int:
