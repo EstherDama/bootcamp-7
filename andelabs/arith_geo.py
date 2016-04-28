@@ -29,7 +29,7 @@ def is_arithmetic(l):
 def is_geometric(a):
 	ratio = a[1]/float(a[0])
 	for index in range(len(a)-1):
-		if not (a[index + 1] / a[index] == ratio):
+		if not (a[index + 1] / float(a[index]) == ratio):
 			return False
 	return True
 

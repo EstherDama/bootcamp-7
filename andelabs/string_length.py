@@ -1,13 +1,13 @@
-def string_length(data):
+def string_length(elements):
   b = []
 
-  if type(data) == str:
-    b.append(len(data))
+  if type(elements) == str:
+    b.append(len(elements))
     return b
     
-  elif type(data) == list:
-    for item in data:
-      b.append(len(item))
+  elif type(elements) == list:
+    for element in elements:
+      b.append(len(element))
   return b
 
 print string_length("Godson")

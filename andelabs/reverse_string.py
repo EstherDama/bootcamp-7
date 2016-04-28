@@ -1,16 +1,24 @@
-def reverse_string(string):
+def reverse_string(input):
   
-  b = []
-
-  for item in range(len(string)-1, -1, -1):
-    b.append(string[item])
-    str1 = "".join(b)
-
-  if string == "":
+  reversed = input[::-1]
+  # reversed = the_reversal(input)
+  if  input == "":
     return None
-  elif b == list(string):
+  elif reversed == list(input):
     return True
   else:
-    return str1
+    return reversed
+
+#You can define a function where you put the word to be reversed or us the operator above
+# def the_reversal(string):
+
+#   b = []
+
+#   for item in range(len(string)-1, -1, -1):
+#     b.append(string[item])
+#     str1 = "".join(b)
+#   return b
+
+
 print reverse_string("civic")
 print reverse_string("books")
